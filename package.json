@@ -1,0 +1,20 @@
+{
+  "name": "jule",
+  "version": "0.0.0-proto-2",
+  "description": "",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./index.js",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "global": "npm link",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

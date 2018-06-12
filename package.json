@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "preferGlobal": true,
-  "bin": "./index.js",
+  "bin": "./commands.js",
   "dependencies": {
     "commander": "^2.15.1",
     "inquirer": "^5.2.0"

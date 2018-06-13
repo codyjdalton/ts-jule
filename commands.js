@@ -4,7 +4,7 @@
  */
 const program = require('commander');
 
-const { HelloModule } = require('./modules/hello/hello.module');
+const { HelloModule } = require('./lib/modules/hello/hello.module');
 
 program
     .command('hello')

@@ -2,5 +2,10 @@
 # Dependencies
 /node_modules
 
+# Reports
+
+/coverage
+/.nyc_output
+
 # System files
 .DS_Store

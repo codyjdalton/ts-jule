@@ -9,10 +9,44 @@
     "commander": "^2.15.1",
     "inquirer": "^5.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  },
   "scripts": {
     "global": "npm link",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha"
+  },
+  "nyc": {
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js",
+      "./node_modules"
+    ],
+    "extension": [
+      ".js"
+    ],
+    "reporter": [
+      "text-summary",
+      "html",
+      "lcov"
+    ],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "sourceMap": true,
+    "instrument": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codyjdalton/jule.git"
   },
   "keywords": [],
   "author": "",

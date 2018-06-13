@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/jule.svg)](https://badge.fury.io/js/jule)
+[![Build Status](https://travis-ci.org/codyjdalton/jule.svg?branch=master)](https://travis-ci.org/codyjdalton/jule) [![Coverage Status](https://coveralls.io/repos/github/codyjdalton/jule/badge.svg?branch=master)](https://coveralls.io/github/codyjdalton/jule?branch=master) [![npm version](https://badge.fury.io/js/jule.svg)](https://badge.fury.io/js/jule)
 
 # Jule
 
@@ -26,6 +26,11 @@ Change the name in package.json to your project name:
 Run `npm link` to use your application on the command line:
 
 ```
-npm link;
-your-project hello;
+npm install
+```
+```
+npm link
+```
+```
+your-project hello
 ```

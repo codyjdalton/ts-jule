@@ -1,19 +1,19 @@
 {
   "name": "jule",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "/lib/program.js",
   "preferGlobal": true,
-  "bin": "./commands.js",
+  "bin": "./lib/program.js",
   "dependencies": {
     "commander": "^2.15.1",
     "inquirer": "^5.2.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.1",
-    "mocha": "^5.2.0",
-    "nyc": "^12.0.2"
+    "chai": "*",
+    "coveralls": "*",
+    "mocha": "*",
+    "nyc": "*"
   },
   "scripts": {
     "global": "npm link",
@@ -21,11 +21,10 @@
   },
   "nyc": {
     "include": [
-      "**/*.js"
+      "lib/**/*.js"
     ],
     "exclude": [
-      "**/*.spec.js",
-      "./node_modules"
+      "lib/**/*.spec.js"
     ],
     "extension": [
       ".js"

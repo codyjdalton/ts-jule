@@ -7,5 +7,10 @@ script:
 - npm test
 after_script: cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
 deploy:
+  provider: npm
+  email: codydevbox@gmail.com
   api_key:
     secure: 4InZTU5RWmPBacc1S07uSEah/MVSCMTvLQlkavjOzw7Zq+cDNvKyP4wULvmH3vzVd4gR8cwbTNT0DHFNNQFj5GJ5xY7CcAhxGezHaxxMfHAd1Os3xP62NtRHny0HRvLj+uEOf75kjZkXNJjw2Z3kqA3qw+G+FXdefnTcC0O+Cq8pBrhLl6RmGb/Wfe+inU4VYLdZ3K9f8JSxo8xfAwo/90CVpBFDPBODOCuGZ4cFk22Q6Ndq05fynqS1x9MMZBOoyYonDED81y2H6ZoX+rvMnCrITMyzG8uttA4Z3p5lxT3agjuB6fi3vy0LwF53cm/wYzSxiB3y0zY9C+UQY4JIBb4yk0psSWjB9J6blb2MO6Ekk1sZGcKjILfb9D8UpRys5XHi8JDMac0Ajfs2X6ZhK+N86o2PiTrjxOvpcmMAz2KsamMiI9xjHgB8vbHM4H2L968ta9DPrLnMI2/z/GGfsFTpfSmwH/tVEMrxPcu/y2Qy4ZxEP465zTjw8k3wlYFNOFJNG1pgeXFs3G48kCK/BF5aysJu1MoDxM61uDl5/kEwrzv5ukxec+ChtW7cc0mzrlf2DmxIUPNknjVZ0BVncvzK/VA+629BJ4kZT/5axY0EeU9i/zc1/bPtN8LILwCmdVU7GNJsTmZyJ7fUcfBREt07HiJ5LA+jIm0wLa9vGoU=
+  on:
+    branch: master
+    repo: codyjdalton/default-response

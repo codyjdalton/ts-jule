@@ -1,13 +1,14 @@
 /**
  * hello.module
  */
-const { prompt } = require('inquirer');
+import { prompt } from 'inquirer';
 
-class HelloModule {
+export class HelloModule {
+
+    prompt: any = prompt;
+    log: any = console.log;
 
     constructor() {
-        this.log = console.log;
-        this.prompt = prompt;
     }
 
     sayHello() {
@@ -27,7 +28,3 @@ class HelloModule {
             });
     }
 }
-
-module.exports = {
-    HelloModule
-};

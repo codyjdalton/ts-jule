@@ -1,33 +1,46 @@
 {
-  "name": "jule",
+  "name": "ts-jule",
   "version": "0.1.0",
   "description": "",
-  "main": "/lib/program.js",
+  "main": "dist/program.js",
+  "types": "dist/program.d.ts",
   "preferGlobal": true,
-  "bin": "./lib/program.js",
+  "bin": "dist/program.js",
   "dependencies": {
     "commander": "^2.15.1",
     "inquirer": "^5.2.0"
   },
   "devDependencies": {
-    "chai": "*",
-    "coveralls": "*",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.8",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
     "mocha": "*",
-    "nyc": "*"
+    "nyc": "^13.1.0",
+    "source-map-support": "^0.5.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
   },
   "scripts": {
     "global": "npm link",
+    "fix": "tslint --fix --project ./tsconfig.json",
+    "build": "tsc && npm link",
+    "stop": "killall -KILL node",
     "test": "nyc mocha"
   },
   "nyc": {
     "include": [
-      "lib/**/*.js"
+      "**/*.ts"
     ],
     "exclude": [
-      "lib/**/*.spec.js"
+      "**/*.spec.ts"
     ],
     "extension": [
-      ".js"
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
     ],
     "reporter": [
       "text-summary",

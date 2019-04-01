@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/codyjdalton/jule.svg?branch=master)](https://travis-ci.org/codyjdalton/jule) [![Coverage Status](https://coveralls.io/repos/github/codyjdalton/jule/badge.svg?branch=master)](https://coveralls.io/github/codyjdalton/jule?branch=master) [![npm version](https://badge.fury.io/js/jule.svg)](https://badge.fury.io/js/jule)
+[![Build Status](https://travis-ci.org/codyjdalton/ts-jule.svg?branch=master)](https://travis-ci.org/codyjdalton/ts-jule) [![Coverage Status](https://coveralls.io/repos/github/codyjdalton/ts-jule/badge.svg?branch=master)](https://coveralls.io/github/codyjdalton/ts-jule?branch=master) [![npm version](https://badge.fury.io/js/ts-jule.svg)](https://badge.fury.io/js/ts-jule)
 
-# Jule
+# TS Jule
 
 A simple seed app for building CLIs with Node and Javascript.
 
@@ -8,7 +8,7 @@ A simple seed app for building CLIs with Node and Javascript.
 
 Clone the repo:
 ```
-git clone https://github.com/codyjdalton/jule.git
+git clone https://github.com/codyjdalton/ts-jule.git
 ```
 
 Change directory to the jule project:
@@ -23,10 +23,13 @@ Change the name in package.json to your project name:
 }
 ```
 
-Run `npm link` to use your application on the command line:
+Use your application on the command line:
 
 ```
 npm install
+```
+```
+npm run build
 ```
 ```
 npm link

@@ -2,15 +2,14 @@
 /**
  * commands
  */
+
 const program = require('commander');
 
-const { HelloModule } = require('./modules/hello/hello.module');
+import { HelloModule } from './modules/hello/hello.module';
 
-class Program {
+export class Program {
 
-    constructor() {
-        this.program = program;
-    }
+    program: any = program;
 
     run() {
         return new Promise((resolve) => {
@@ -27,9 +26,4 @@ class Program {
     }
 }
 
-const prog = new Program().run();
-
-module.exports = {
-    prog,
-    Program
-};
+export const prog = new Program().run();

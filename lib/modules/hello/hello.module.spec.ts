@@ -30,7 +30,7 @@ describe('HelloModule', () => {
 
     it('should start with a greeting', () => {
 
-        const logs = [];
+        const logs: any[] = [];
 
         aModule.log = (text) => {
             logs.push(text);
@@ -59,7 +59,7 @@ describe('HelloModule', () => {
 
     it('should show the user input', (done) => {
 
-        const logs = [];
+        const logs: any[] = [];
 
         aModule.log = (text) => {
             logs.push(text);

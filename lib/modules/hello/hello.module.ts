@@ -5,8 +5,8 @@ import { prompt } from 'inquirer';
 
 export class HelloModule {
 
-    prompt: any = prompt;
-    log: any = console.log;
+    prompt = prompt;
+    log = console.log;
 
     constructor() {
     }

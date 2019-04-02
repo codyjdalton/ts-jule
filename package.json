@@ -23,7 +23,6 @@
     "typescript": "^3.1.6"
   },
   "scripts": {
-    "global": "npm link",
     "fix": "tslint --fix --project ./tsconfig.json",
     "build": "tsc && npm link",
     "stop": "killall -KILL node",

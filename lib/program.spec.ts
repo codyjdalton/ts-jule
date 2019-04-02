@@ -2,8 +2,9 @@
  * app.spec
  */
 // const { expect } = require("chai");
-// const { Program } = require('./program');
+import { prog } from './program';
 
 describe('Program', () => {
-
+    
+    // override program prompt
 });
